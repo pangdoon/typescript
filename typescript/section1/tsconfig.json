@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // ts-node는 파일명을 적어주면 한방에 실행을 해주는 도구였다.
+    // ESNext는 최신문법, ts-node 사용시 에러 package.json에 "type" : "module" 을 적어야 함 ,
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist", // js로 컴파일된 것들이 모일 폴더명
+    "strict": true, // 엄격한 타입검사를 진행시킴
+    "moduleDetection": "force", // 모든 모듈을 개별화 시켜줌
+    "skipLibCheck": true // 라이브러리의 타입검사를 건너뜀
+  },
+  "ts-node": {
+    "esm": true // ts-node 가 es module 시스템으로 동작을 하게 함
+  },
+  "include": ["src"] //  컴파일될 소스 파일의 디렉토리를 지정
+}
