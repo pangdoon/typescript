@@ -9,7 +9,7 @@ export default function Editor(props: Props) {
   const dispatch = useTodoDispatch();
 
   const [text, setText] = useState("");
-
+  const [textt, settText] = useState("");
   
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value)
